@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bitter:ital,wght@1,100&family=Redressed&display=swap');
+
+html,
+body {
+    background-color: #a1c4fd  ; 
+    background: linear-gradient( to bottom, #a1c4fd , #c2e9fb);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+table,
+th,
+td {
+    padding: 10px;
+    table-layout: fixed;
+    width: 100%;
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(28, 59, 55);
+    word-wrap: break-word;
+}
+
+.table1 tr:nth-child(odd){
+    background-color: #f5f7fa ; 
+    background: linear-gradient( to bottom, #f5f7fa  , #c3cfe2);
+}
+
+.table2 tr:nth-child(odd){
+    background-color: #f5f7fa ; 
+    background: linear-gradient( to bottom, #f5f7fa  , #c3cfe2);
+}
+th {
+    background-color: antiquewhite;
+}
+
+img {
+border-radius: 50%;
+
+}
+video {
+box-sizing: border-box;
+border-style: double;
+border-width: 3px;
+border-color: rgb(28, 59, 55);
+}
+
+a {
+    color: #062b2f;
+}
+
+a:hover {
+    color: brown;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Redressed', cursive;
+    text-shadow: 1px 1px 2px beige;
+    color: black;
+}
+
+.bg-light{
+    background-color:#cfd9df; 
+    background: linear-gradient( to bottom,#cfd9df, #e2ebf0);
+    background-repeat: no-repeat;
+    overflow: auto;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(41, 35, 35, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(42, 42, 42, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(51, 51, 51, 0.75);
+
+}
+
+.navbar-brand{
+    font-family: 'Bangers', cursive;
+    text-shadow: 1px 1px 2px beige;
+    color: aquamarine;
+    font-size: xx-large;
+}
+
+.nav-link:hover{
+    color: aquamarine;
+}
+
+.nav-link{
+    font-family: 'Redressed', cursive;
+    font-size: larger;
+}
+
+.btn-primary{
+    background-color: #1ecbe1; 
+    background: linear-gradient( to bottom, #1ecbe1, #649B95);
+    background-repeat: no-repeat;
+    overflow: auto;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(41, 35, 35, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(42, 42, 42, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(51, 51, 51, 0.75);
+}
+
+.btn-primary:hover{
+    background-color: #062b2f; 
+    background: linear-gradient( to bottom, #1ecbe1, #649B95);
+    background-repeat: no-repeat;
+    overflow: auto;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(41, 35, 35, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(42, 42, 42, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(51, 51, 51, 0.75);
+}
+
+legend{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Bitter', serif;;
+    color: black;
+    text-shadow: 1px 1px 2px beige;
+}
