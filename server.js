@@ -1,10 +1,10 @@
 /*********************************************************************************
-* WEB700 – Assignment 04
+* WEB700 – Assignment 05
 * I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part
 * of this assignment has been copied manually or electronically from any other source
 * (including 3rd party web sites) or distributed to other students.
 *
-* Name: Chirag Dudheria Student ID: 141957191 Date: 03/12/2021
+* Name: Chirag Dudheria Student ID: 141957191 Date: 03/27/2021
 * Online (Heroku) Link: https://hidden-atoll-89637.herokuapp.com/
 ********************************************************************************/ 
 
@@ -110,7 +110,7 @@ app.get("/departments", (req, res) => {
 
 app.get("/employee/:num", (req, res) => {
   serverData.getEmployeeByNum(req.params.num).then((employee) => {
-   res.render("employee", { data: employee });
+   res.render("employee", { employee: employee });
   }).catch((err) => {
     res.send(err);
   })
@@ -119,7 +119,7 @@ app.get("/employee/:num", (req, res) => {
 
 app.get("/department/:id", (req, res) => {
   serverData.getDepartmentById(req.params.id).then((departments) => {
-    res.render("department", { data: departments });
+    res.render("department", { department: departments });
   }).catch((err) => {
     res.send(err);
   })
