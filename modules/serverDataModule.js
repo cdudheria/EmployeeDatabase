@@ -105,3 +105,19 @@ module.exports.addEmployee = function (employeeData){
         resolve(allData.employees);
     });
 }
+
+module.exports.getDepartmentById = function (id){
+    return new Promise((resolve,reject) => {
+        if(allData.departments[id]){
+            resolve(allData.departments[id - 1]);
+        }
+        
+        reject("No results returned");
+    });
+}
+
+module.exports.updateEmployee = function(employeeData) {
+    return new Promise((resolve,reject) => {
+        
+    });
+}
