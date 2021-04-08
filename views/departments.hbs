@@ -20,7 +20,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {{#each data}}
+                        {{#each departments}}
                         <tr>
                             <td><a href="/department/{{departmentId}}">{{departmentId}}</a></td>
                             <td><a href="/employees?department={{departmentId}}">{{departmentName}}</a></td>
@@ -30,9 +30,11 @@
                 </table>
             </div>
         </div>
+        {{#unless departments}}
         <div class="col-md-12 text-center">
             <strong>{{message}}</strong>
         </div>
+        {{/unless}}
     </div>
     </div>
 </body>
