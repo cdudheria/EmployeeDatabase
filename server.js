@@ -166,7 +166,7 @@ app.post("/departments/add", (req, res) => {
     });
 });
 
-app.post("/departments/update", (req, res) => {
+app.post("/department/update", (req, res) => {
     data.updateDepartment(req.body).then(() => {
         res.redirect("/departments");
     });

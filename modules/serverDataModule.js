@@ -131,8 +131,7 @@ module.exports.addEmployee = function (employeeData) {
             if (employeeData[prop] == '')
                 employeeData[prop] = null;
         }
-    
-        Employee.create({
+         Employee.create({
             firstName: employeeData.firstName,
             lastName: employeeData.lastName,
             email: employeeData.email,
@@ -144,7 +143,7 @@ module.exports.addEmployee = function (employeeData) {
             isManager: employeeData.isManager,
             employeeManagerNum: employeeData.employeeManagerNum,
             status: employeeData.status,
-            hireDate: employeeData.hireDate   
+            hireDate: employeeData.hireDate
         }).then(function (data) {
             resolve(data);
         }).catch(function (err) {
@@ -175,13 +174,16 @@ module.exports.addDepartment = function (departmentData) {
 
 module.exports.updateDepartment = function (departmentData) {
     return new Promise(function (resolve, reject) {
-        for (let i = 0; i < Department.length; i++) {
-            if (departmentData = departmentData ? true : false) {
-                departmentData = null;
-            }
+        for (var prop in departmentData) {
+            if (departmentData[prop] == '')
+                departmentData[prop] = null;
         }
-        Department.update().then(function () {
-            resolve();
+        Department.update({
+            departmentName: departmentData.departmentName
+        },{
+            where: {departmentId: departmentData}
+        }).then(function (data) {
+            resolve(data);
         }).catch(function (err) {
             reject("unable to update department", err)
             return;
